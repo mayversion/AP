@@ -1,5 +1,7 @@
-price=input("Please type in a price:")
-dinars=price.split(".")
+price=float(input("Please type in a price:"))
 
-print(f"Dinars: {dinars[0]}")
-print(f"Centimes: {dinars[1]}")
+Dinars=price.__floor__()
+
+Centimes=int((price-Dinars)*100)
+print(f"Dinars:{Dinars}")
+print(f"Centimes:{Centimes}")

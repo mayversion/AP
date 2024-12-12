@@ -1,7 +1,12 @@
 total_amount=int(input("Total amount:"))
 nb_items=int(input("Number of items"))
 day_of_week=input("Day of the week:")
-if day_of_week=="Monday" or day_of_week=="Tuesday" or day_of_week=="Wednesday" or day_of_week=="Thursday" or day_of_week=="Friday" :
+array1 = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+array2=["Saturday", "Sunday"]
+
+
+if array1.__contains__(day_of_week):
+
     if nb_items>5:
         discount=0.15
     else:
